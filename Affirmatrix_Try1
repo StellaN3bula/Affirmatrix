@@ -1,0 +1,73 @@
+
+/*
+Idea:
+22.02.2025
+If you had a negative thought – press the button and you get a positive affirmation. 
+by StellaN3bula
+*/
+
+
+class AffiAppTry1
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("need a positive affirmation?");
+        Console.WriteLine("Please press Y for Yes or N for no.");
+        Console.WriteLine("enter to continue.");
+        string userInput = Console.ReadLine().ToUpper(); // read user input
+
+        Random numberGenerator = new Random();
+
+
+        if (userInput == "Y")
+        {
+            int generatedNumber = numberGenerator.Next(1, 11); // choose a random number between 1 and 10 
+            Console.WriteLine("Your affirmation is: ");
+            switch (generatedNumber) //affirmation 2-10 are from ChatGPT
+            {
+                case 1:
+                    Console.WriteLine("You are beautiful!");
+                    break;
+                case 2:
+                    Console.WriteLine("You are unstoppable!");
+                    break;
+                case 3:
+                    Console.WriteLine("Your potential is infinite!");
+                    break;
+                case 4:
+                    Console.WriteLine("You turn obstacles into opportunities!");
+                    break;
+                case 5:
+                    Console.WriteLine("You are stronger than you think!");
+                    break;
+                case 6:
+                    Console.WriteLine("You radiate confidence and positivity!");
+                    break;
+                case 7:
+                    Console.WriteLine("Your energy inspires those around you!");
+                    break;
+                case 8:
+                    Console.WriteLine("You are worthy of love and success!");
+                    break;
+                case 9:
+                    Console.WriteLine("Every challenge makes you more powerful!");
+                    break;
+                case 10:
+                    Console.WriteLine("You create your own reality!");
+                    break;
+                default:
+                    Console.WriteLine("Ende");
+                    break;
+            }
+        }
+        else if (userInput == "N")
+        {
+
+            Console.WriteLine("Have a nice day");
+        }
+        else
+        {
+            Console.WriteLine("Error. Please press Y / N.");
+        }
+    }
+}
