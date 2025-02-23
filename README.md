@@ -35,7 +35,7 @@ That same evening, **Affirmatrix** was born. 🚀
 
 1️⃣ **Clone the repo:**  
    ```sh  
-   git clone https://github.com/dein-username/affirmatrix.git  
+   git clone https://github.com/StellaN3bula/Affirmatrix.git 
    cd affirmatrix  
    ```  
 
